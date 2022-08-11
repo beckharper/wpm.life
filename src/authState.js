@@ -14,15 +14,6 @@ export const AuthContextProvider = authContext.Provider;
 
 function authReducer(state, action) {
   switch (action.type) {
-    case "AUTH_SUCCESS": {
-      return {
-        ...state,
-        id: action.payload.id,
-        username: action.payload.username,
-        isAuthed: true,
-      };
-    }
-
     case "SET_ANON_USERNAME": {
       return {
         ...state,
